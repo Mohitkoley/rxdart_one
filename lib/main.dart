@@ -152,6 +152,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final stopwatch = Stopwatch();
     stopwatch.start();
     streamController.sink.add(helloString);
+
     debugPrint("executed in ${stopwatch.elapsedMilliseconds}ms");
     stopwatch.stop();
   }
